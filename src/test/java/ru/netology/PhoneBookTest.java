@@ -11,10 +11,16 @@ class PhoneBookTest {
     void add() {
         String name = "Ivan";
         Integer number = 35987;
-        PhoneBook.add(name,number);
-        assertEquals(phoneBook.get(name),number);
+        PhoneBook.add(name, number);
+        assertEquals(phoneBook.get(name), number);
 
+    }
 
+    @Test
+    void findByNumber() {
+        String name = "Ivan";
+        Integer number = 35987;
+        assertEquals(PhoneBook.findByNumber(number),name);
 
 
     }
