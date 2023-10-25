@@ -19,7 +19,7 @@ public class PhoneBook {
         return phoneBook.get(name);
     }
      public static Set<String> printAllNames(Map map){
-        return null;
+        return map.keySet();
 
      }
 
