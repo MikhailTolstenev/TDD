@@ -25,4 +25,13 @@ class PhoneBookTest {
 
 
     }
+
+    @Test
+    void findByName() {
+        String name = "Ivan";
+        Integer number = 35987;
+        PhoneBook.add(name, number);
+        assertEquals(PhoneBook.findByName(name),number);
+
+    }
 }

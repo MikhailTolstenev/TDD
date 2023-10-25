@@ -15,7 +15,9 @@ public class PhoneBook {
     public static String findByNumber (Integer number){
         String keyFromBiMap = HashBiMap.create(phoneBook).inverse().get(number);
         return keyFromBiMap;
-
+    }
+    public static Integer findByName (String name){
+        return null;
     }
 
 }
