@@ -11,16 +11,18 @@ public class PhoneBook {
         phoneBook.put(name, number);
     }
 
-    public static String findByNumber (Integer number){
+    public static String findByNumber(Integer number) {
         String keyFromBiMap = HashBiMap.create(phoneBook).inverse().get(number);
         return keyFromBiMap;
     }
-    public static Integer findByName (String name){
+
+    public static Integer findByName(String name) {
         return phoneBook.get(name);
     }
-     public static Set<String> printAllNames(Map map){
+
+    public static Set<String> printAllNames(Map map) {
         return map.keySet();
 
-     }
+    }
 
 }
