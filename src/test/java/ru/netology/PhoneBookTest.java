@@ -20,6 +20,7 @@ class PhoneBookTest {
     void findByNumber() {
         String name = "Ivan";
         Integer number = 35987;
+        PhoneBook.add(name, number);
         assertEquals(PhoneBook.findByNumber(number),name);
 
 

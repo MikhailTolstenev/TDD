@@ -1,5 +1,7 @@
 package ru.netology;
 
+import com.google.common.collect.HashBiMap;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,8 +12,10 @@ public class PhoneBook {
         phoneBook.put(name, number);
     }
 
-    public static String findByNumber (int number){
-        return null;
+    public static String findByNumber (Integer number){
+        String keyFromBiMap = HashBiMap.create(phoneBook).inverse().get(number);
+        return keyFromBiMap;
+
     }
 
 }
