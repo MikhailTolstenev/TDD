@@ -17,7 +17,7 @@ public class PhoneBook {
         return keyFromBiMap;
     }
     public static Integer findByName (String name){
-        return null;
+        return phoneBook.get(name);
     }
 
 }
