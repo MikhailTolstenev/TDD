@@ -2,11 +2,10 @@ package ru.netology;
 
 import com.google.common.collect.HashBiMap;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class PhoneBook {
-    public static Map<String, Integer> phoneBook = new HashMap<>();
+    public static SortedMap<String, Integer> phoneBook = new TreeMap<>();
 
     public static void add(String name, Integer number) {
         phoneBook.put(name, number);
@@ -19,5 +18,9 @@ public class PhoneBook {
     public static Integer findByName (String name){
         return phoneBook.get(name);
     }
+     public static Set<String> printAllNames(Map map){
+        return null;
+
+     }
 
 }
